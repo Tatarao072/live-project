@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Contact</title>
+</head>
+<style type="text/css">
+body{background:url("contact-us.jpg") no-repeat center fixed  ;
+     background-size: cover;
+     }
+  #name{  
+      width: 190px;
+      background: white;
+      color:blue;
+      font-size: 16px;
+      line-height: 25px;
+      padding: 5px 50px;
+      border-radius: 15px;
+      border-color:blue;
+      cursor: pointer;
+       text-align: center
+       }
+  #que{  
+      width: 190px;
+      background: white;
+      color:blue;
+      font-size: 16px;
+      line-height: 25px;
+      padding: 5px 100px;
+      border-radius: 15px;
+      border-color:blue;
+      cursor: pointer;
+       text-align: center
+       }
+    input[type=email]{ 
+      width: 190px;
+      background: white;
+      color:blue;
+      font-size: 16px;
+      line-height: 25px;
+      padding: 5px 50px;
+      border-radius: 15px;
+      border-color:blue;
+      cursor: pointer;
+       text-align: center
+      }
+    #message{
+     
+      background: white;
+      color:blue;
+      font-size: 16px;
+      line-height: 25px;
+      
+      border-radius: 15px;
+      border-color:blue;
+      cursor: pointer;
+       text-align: center
+      }
+    #sub{ 
+      background: white;
+      color:blue;
+      font-size: 16px;
+      line-height: 25px;
+      padding: 5px 10px;
+      border-radius: 15px;
+      border-color:blue;
+      cursor: pointer;
+      text-align: center}
+    
+</style>
+<body>
+<div class="contact">
+<form action="contact" method="post">
+<h1 style=" font-family:sans-serif;font-size:20px;color:red">Get in touch with us by filling contact form below</h1>
+<input type="text" name="fname" id="name" placeholder="Full Name">
+<input type="email" name="email" placeholder="Mail id" required="required">
+<input type="number" name="num" id="que" placeholder="Mobile Number" required="required"><br>
+<textarea  id="message"name="address"rows="5" cols="30" placeholder="Ask your question? "></textarea><br>
+<input type="submit" name="send" id="sub"placeholder="send">
+<input type="reset" name="cancel" id="sub" placeholder="cancel">
+
+
+</form>
+
+
+</div>
+</body>
+</html>

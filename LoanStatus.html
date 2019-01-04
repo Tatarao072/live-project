@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Loan status</title>
+</head>
+<style type="text/css">
+body{background:black;}
+#ref{
+      width: 180px;
+      background:white;
+      color:blue;
+      font-size: 16px;
+      padding: 7px 7px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;
+      }
+      
+       #sub{
+      width: 80px;
+      background:white;
+      color:blue;
+      font-size: 16px;
+      padding: 7px 1px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;}
+      .loan{  text-align:center;
+      font-size: 16px;
+      line-height: 25px; 
+      border-radius: 2px;
+      cursor: pointer;
+      float:center;
+      padding-top:100px}
+</style>
+<body>
+
+<div class="loan">
+<form action="status" method="post">
+<h2 style="color:red;font-family: sans-serif;">loan status check here</h2>
+
+<input type="text" name="ref" id="ref" placeholder="Mobile number" required="required"><br><br>
+
+<input type="submit" id="sub" value="check">
+</form>
+</div>
+</body>
+</html>

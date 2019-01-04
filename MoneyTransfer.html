@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Money transfer</title>
+</head>
+<style type="text/css">
+body{background:black;}
+.Money{background:grey;
+       float:right;
+       color:white;
+       padding-right:50px}
+ .mt{text-align: center;
+     padding-top:50px}    
+#name{
+      width: 280px;
+      background:white;
+      color:black;
+      font-size: 16px;
+      padding: 7px 2px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;
+      border-color:yellow}
+      
+ #drop{
+      width: 280px;
+      background:white;
+      color:black;
+      font-size: 16px;
+      padding: 7px 2px;
+      border-radius: 15px;
+      cursor: pointer;
+      text-align: center;
+      border-color:yellow}
+      
+  #sub{
+      width: 140px;
+      background:white;
+      color:black;
+      font-size: 16px;
+      padding: 7px 2px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;
+      border-color:blue}
+</style>
+<body>
+<div class="Money">
+My balance:10000.Rs
+</div>
+
+<div class="mt">
+<h2 style="color: red">Money transfer form</h2>
+<form action="moneyTransfer" method="post">
+<input type="text" name="bname" id="name" placeholder="holder name" required="required"><br><br>
+<select name="Bank" id="drop">
+    <option value="Bank name">Bank name</option>
+    <option value="Andhra bank">Andhra bank</option>
+    <option value="Bank of Baroda">Bank of baroda</option>
+    <option value="Bank of india">Bank of india</option>
+    <option value="Canara bank">Canara bank</option>
+    <option value="State bank of india">State bank of india</option>
+    <option value="Syndicate bank ">Syndicate bank</option>
+    <option value="vijaya bank">Vijaya bank</option>
+    <option value="Other">other</option></select><br><br>
+<input type="text" name="ifsc" id="name" placeholder="IFSC code" required="required"><br><br>
+<input type="text" name="branch" id="name" placeholder="Branch name" required="required"><br><br>
+<input type="number" name="number" id="name" placeholder="Account number" required="required"><br><br>
+<select name="account type" id="drop">
+    <option value="Account type">Account type</option>
+    <option value="Savings">Savings</option>
+    <option value="Current">Current</option>
+  </select><br><br>
+ <input type="number" name="amt" id="name" placeholder="Amount(Rupees)" required="required"><br><br>
+ <input type="submit" value="Transfer" id="sub">
+ <input type="reset" value="Cancel" id="sub">
+</form>
+</div>
+</body>
+</html>

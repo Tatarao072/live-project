@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+</head>
+<style type="text/css">
+*{margin:0;padding:0;}
+body{background:url("solution-suite-customer.png") no-repeat center fixed  ;
+     background-size: cover }
+h1{text-align: center;color: white;  background: rgba(0,0,0,0.5);padding: 15px;}
+.registration{margin:auto; 
+              width:50%;
+              text-align:left;
+              color:white;
+              padding: 25px}
+
+#name{width: 40%;
+      padding: 5px;
+      border-radius: 5px;
+      border:1px solid white;
+      outline:0;font-family: serif;
+      font-size: 18px;
+      background: none;
+      color: white; }
+#date{width: 40%;
+      padding: 5px;
+      border-radius: 5px;
+      border:1px solid white;
+      outline:0;font-family: serif;
+      font-size: 18px;
+      background: none;
+      color: white; }
+#number{width: 30%;
+        padding: 5px;
+        border-radius: 5px; 
+        border:1px solid white;
+        outline:0;
+        font-family:serif;
+        font-size: 18px; 
+        background: none;
+        color: white; }
+ #n   {width: 9%;
+        padding: 5px;
+        border-radius: 5px; 
+        border:1px solid white;
+        outline:0;
+        font-family:serif;
+        font-size: 18px; 
+        background: none;
+        color: white;
+      }
+ #num{  
+        padding: 7px ;
+        border-radius: 5px; 
+        border:1px solid white;
+        outline: 0;
+        background: none;
+        color:white;}
+ #check{font-family: serif;font-size: 20px;}
+ #sub{width: 150px;
+      padding: 5px;
+      font-family:serif;
+      font-size: 18px;
+      border: 1px solid white;
+      outline: 0;
+      border-radius: 5px;
+      background: none;
+      color:white;}
+  #res{width: 150px;
+      padding: 5px;
+      font-family:serif;
+      font-size: 18px;
+      border: 1px solid white;
+      outline: 0;
+      border-radius: 5px;
+      background: none;
+      color:white;}
+  #sub:hover{background:#123456;}   
+  ::placeholder{color: white} 
+  #ma{width: 7%;
+      padding: 5px;
+      border-radius: 5px;
+      outline:0;
+      font-family: serif;
+      font-size: 20px;
+      background: none;
+      color: white;}
+  
+</style>
+<body>
+<h1>Registration form for J S P* Bank</h1>
+<div class="registration">
+<form action="regs" method="post">
+<input type="text" name="fname" id="name" placeholder="Enter your first name" required="required"><br><br>
+<input type="text" name="lname" id="name" placeholder="Enter your last name" required="required"><br><br>
+<input type="email" name="email" id="name" placeholder="Enter your gmail id" required="required"><br><br>
+<input type="password" name="password" id="name" placeholder="Enter your password" required="required"><br><br>
+<input type="password" name="cpassword" id="name" placeholder="Conform password" required="required"><br><br>
+<select id="n">
+<option>+91</option>
+<option>+1</option>
+<option>+44</option>
+<option>+52</option>
+</select>
+<input type="number" name="number" id="number" placeholder="Enter your mobile number" required="required"><br><br>
+<input type="date" name="trip-start" value="2018-07-22" min="1800-01-01" max="2018-12-31" id="date" placeholder="date of birth" required="required"><br><br>
+<input type="radio" id="ma" name="gender" value="male" checked>Male
+<input type="radio" id="ma" name="gender" value="male" checked>Female
+<input type="radio" id="ma" name="gender" value="male" checked>Others<br>
+<textarea  id="res"name="address"rows="5" cols="50" placeholder="Address" required="required"></textarea><br>
+<input type="checkbox" id="check" name="con" required="required"><span id="check" >I agree all the terms and conditions.</span><br><br>
+<input type="submit" id="sub"  value="Register">
+<input type="reset" id="res" value="Cancel">
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Generate Account Number</title>
+</head>
+<style type="text/css">
+body{background:url("want-save-money-on-paper-checks-skip-bank.jpg") no-repeat center fixed  ;
+        background-size: cover;
+        padding: 8px 20px;
+        letter-spacing: 2px;
+        color:white;
+        float:center;
+        border-radius: 15px;
+        cursor: pointer;
+        float:center;
+  }
+#submit{
+        text-align:center;
+        font-size: 16px;
+        padding: 5px 80px;
+        border-radius: 5px;
+        cursor: pointer
+  }
+#hn{
+        text-align:center;
+        font-size: 16px;
+        padding: 5px 80px;
+        border-radius: 5px;
+        cursor: pointer
+  }
+#AccNum{
+       text-align:center;
+       font-size: 16px;
+      padding: 5px 80px;
+      border-radius: 5px;
+      cursor: pointer
+  }
+  #at{
+       text-align:center;
+       font-size: 16px;
+      padding: 5px 80px;
+      border-radius: 5px;
+      cursor: pointer
+  }
+  
+
+</style>
+<body>
+<form action="accountNum" method="post">
+<h2>Account number generate here</h2>
+<input type="text" name="hName" id="hn" placeholder="Account holder name"><br><br>
+<input type="number" name="AccNum" id="AccNum" placeholder="Account number(11digits)"><br><br>
+<select name="Account type" id="at">
+
+<option value="account type">account type</option>
+<option value="current">current</option>
+<option value="savings">savings</option>
+</select><br><br>
+<input type="submit" value="create account" id="submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome</title>
+</head>
+<style type="text/css">
+body{background:sky;}
+.welcome{
+         width:1525px;
+         height:40px;
+         text-align:center;
+         background-color:blue;
+         color:white;
+         }
+ .main{float: right}
+ ul{float:left;
+   list-style-type: none;
+   margin: 20px;
+   }
+ul li{display: inline-block;margin: 10px 5px}
+ul li a{text-decoration: none;
+        padding: 8px 20px;
+        letter-spacing: 2px;
+        color:white;
+        border-bottom: 1px splid #272727;
+        background: red;
+        }
+ul li a:hover{background-color:#ff3c54}
+
+.dropbtn {
+
+  background-color: #4CAF50;
+  color: white;
+  padding: 7px 50px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color:red;}
+.disply{  background-color: lightgrey;
+  width: 700px;
+  border: 5px solid green;
+  padding: 25px;
+  margin: 5px;
+  height:300px}
+</style>
+<body>
+<div class="welcome">
+<h2 >welcome to jsp* bank</h2>
+</div>
+<a href="HomePage.html" style="float: right;text-decoration:none;text-shadow:orange;background:black;color:white">LogOut</a>
+
+<marquee behavior="scroll" direction="left"><h2 style="color:blue;text-align: center;padding-top:5px;font-family:sans-serif;">
+Everyday is a bank account, and time is our currency. No one is rich, no one is poor, we've got 24 hours each</h2></marquee>
+
+<img alt="JSP* BAnK logo" src="viewlogo.png" width="200" height="100"> 
+<div class="main">
+<ul>
+<li><a href="">My Profile</a></li>
+<li><a href="">Update Profile</a></li>
+</ul>
+</div>
+  <div class="dropdown">
+  <button class="dropbtn">Services</button>
+  <div class="dropdown-content">
+    <a href="">Loans</a>
+    <a href="">ATM Card Services</a>
+    <a href="">Internet Banking</a>
+    <a href="">Change ATM pin</a>
+    <a href="">Block ATM card</a>
+  </div>
+</div>
+<div class="disply">
+
+</div>
+</body>
+</html>

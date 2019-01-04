@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update ATM pin</title>
+</head>
+<style type="text/css">
+body{background:url("11-5.jpg") no-repeat center fixed ;
+     background-size: cover;}
+.update
+     {
+      padding-left: 500px}
+     #num{
+      width: 280px;
+      background:white;
+      color:black;
+      font-size: 16px;
+      padding: 7px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;
+      border-color:blue;
+      } 
+       #gen
+      {
+      width: 120px;
+      background: white;
+      color: #000;
+      font-size: 16px;
+      padding: 10px 0;
+      border-radius: 15px;
+      cursor: pointer;
+      border-color:red;
+      }
+ #gen:hover {
+	color:blue;
+    background-color:red;
+}
+</style>
+<body>
+<div class="mar">
+<marquee><h2 style="color:red">A Personal Identification Number, pronounced "pin"; 
+(often spoken out loud "PIN number", introducing redundancy) is a numeric or
+ alpha-numeric password used in the process of authenticating a user accessing a system.</h2></marquee>
+</div>
+<div class="update">
+<h2 style="color:black">Update ATM pin below</h2>
+<form action="pinUpdate" method="post">
+<input type="number" id="num" name="CardNumber2" placeholder="ATM card number(16 digits)"><br><br>
+<input type="text" id="num" name="expiry1" placeholder="Expiry date(eg.12/19)"><br><br>
+<input type="number" id="num" name="CardPin2" placeholder="Enter pin(4 digits)"><br><br>
+<input type="submit" value="Update" id="gen">
+</form>
+</div>
+
+</body>
+</html>

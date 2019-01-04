@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ATM Card Services</title>
+</head>
+<style type="text/css">
+body{background:skyblue}
+.apply{
+    text-align:center;
+       }
+ #name{
+      width: 180px;
+      background:white;
+      color:black;
+      font-size: 16px;
+      padding: 7px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;
+      border-color:blue;
+      }
+      #sub1
+      {
+      width: 120px;
+      background: white;
+      color: #000;
+      font-size: 16px;
+      padding: 10px 0;
+      border-radius: 15px;
+      cursor: pointer;
+      border-color:red;
+      }
+ #sub1:hover {
+	color:blue;
+    background-color:red;
+}
+#drop{width: 220px;
+      background:greeen;
+      color:blue;
+      font-size: 16px;
+      padding: 7px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;
+      border-color:blue;
+     
+     }
+    
+      </style>
+<body>
+<div class="apply">
+
+<form action="card" method="post">
+<h3 style="color:yellow">Apply for ATM card here</h3>
+<h3>Apply Now & Get Instant Approval</h3>
+<input type="text" name="fname" id="name" placeholder="full name" required="required"><br><br>
+<input type="number" name="number" id="name" placeholder="mobile number" required="required"><br><br>
+<input type="email" name="email" id="name" placeholder="gmail id" required="required"><br><br>
+<input type="number" name="pin" id="name" placeholder="residance pin code" required="required"><br><br>
+ <input type="text" name="cname" id="name" placeholder="Company name" required="required"><br><br>
+ <input type="number" name="sal" id="name" placeholder="Monthly salary in-hand" required="required"><br><br>
+  <select name="EmployementType" id="drop">
+    <option value="salaried">salaried</option>
+    <option value="self employed">self employed</option>
+  </select>
+  <br><br>
+
+ <select name="selectCard" id="drop">
+    <option value="select card">select card</option>
+    <option value="credit card">Credit card</option>
+    <option value="debit card">Debit card</option>
+    <option value="yatra card">Yatra card</option>
+    <option value="prime card">Prime card</option>
+  </select>
+  <br><br>
+
+<button type="submit" id="sub1">Get Started</button>
+
+</form>
+</div>
+</body>
+</html>

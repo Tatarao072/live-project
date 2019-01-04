@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Internet Banking</title>
+</head>
+<style type="text/css">
+        body{font-family:Tohoma,Geneva,sans-serif;
+             color:#fff;
+             background:url("banking.jpg") no-repeat center fixed  ;
+             background-size: cover;
+             }
+       .signin{
+               padding:40px;
+               width:250px;
+               margin: auto;
+               margin-top: 80px;
+               height:200px;
+               margin-left: 180x}
+        
+        form{width:240px;
+        text-align: center;}
+     
+input[type=text]
+ {
+      width: 240px;
+      text-align: center;
+      background: transparent;
+      
+      border-bottom:1px solod #fff;
+      font-family: 'play',sans-serif;
+      font-size: 16px;
+      font-weight: 200px;
+      padding: 10px 0;
+      border-radius: 10px;
+      border-color:red;
+      cursor: pointer;
+      color:black;
+	
+}
+#pass{
+      width: 240px;
+      text-align: center;
+      background: transparent;
+      border-bottom:1px solod #fff;
+      font-family: 'play',sans-serif;
+      font-size: 16px;
+      font-weight: 200px;
+      padding: 10px 0;
+      border-radius: 10px;
+      cursor: pointer;
+      color:black;
+      border-color:red}
+input[type=submit]
+{     
+      width: 110px;
+      background: white;
+      color: blue;
+      font-size: 16px;
+      padding: 4px 0;
+      border-radius: 10px;
+      cursor: pointer;
+      border-color:blue}
+      
+input[type=submit]:hover {
+   color: #fff;
+   background-color: gray;
+	
+}
+input[type=reset]
+{     
+      width: 110px;
+      background: white;
+      color:blue;
+      font-size: 16px;
+      padding: 4px 0;
+      border-radius: 10px;
+      cursor: pointer;
+      border-color:blue}
+      
+input[type=reset]:hover {
+   color: #fff;
+   background-color: gray;
+	
+}
+  
+</style>
+<body>
+<div class="signin">
+<form action="log" method="post">
+<h1 style="color:white">Login here</h1>
+<input type="text" name="username" placeholder="Username"><br><br>
+<input type="password" name="password" id="pass" placeholder="Password"><br><br><br>
+<input type="submit" value="Login">
+<input type="reset" value="Reset">
+</form>
+</div>
+</body>
+</html>

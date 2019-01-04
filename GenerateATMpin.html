@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Generate ATM pin</title>
+</head>
+<style type="text/css">
+body{background:url("11-5.jpg") no-repeat center fixed  ;
+     background-size: cover;}
+ .generate
+     {
+            padding-left: 500px}
+
+     #num{
+      width: 280px;
+      background:white;
+      color:black;
+      font-size: 16px;
+      padding: 7px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;
+      border-color:blue;
+      } 
+       #gen
+      {
+      width: 120px;
+      background: white;
+      color: #000;
+      font-size: 16px;
+      padding: 10px 0;
+      border-radius: 15px;
+      cursor: pointer;
+      border-color:red;
+      }
+ #gen:hover {
+	color:blue;
+    background-color:red;
+}
+      </style>
+<body>
+<div class="mar">
+<marquee><h2 style="color:red">A Personal Identification Number, pronounced "pin"; 
+(often spoken out loud "PIN number", introducing redundancy) is a numeric or
+ alpha-numeric password used in the process of authenticating a user accessing a system.</h2></marquee>
+</div>
+<div class="generate">
+<h2 style="color:gray">Generate ATM pin below</h2>
+<form action="pinGeneration" method="post">
+<input type="number" id="num" name="CardNumber1" placeholder="ATM card number(16 digits)"><br><br>
+<input type="text" id="num" name="expiry" placeholder="Expiry date(eg.11/19)"><br><br>
+<input type="number" id="num" name="CardPin1" placeholder="Enter pin(4 digits)"><br><br>
+<input type="submit" value="Generate" id="gen">
+</form>
+</div>
+
+
+</body>
+</html>

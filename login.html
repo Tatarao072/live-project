@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login page</title>
+</head>
+<style type="text/css">
+        body{font-family:Tohoma,Geneva,sans-serif;
+             color:#fff;
+             background:url("banking.jpg") no-repeat center fixed  ;
+             background-size: cover;
+             }
+       .signin{
+               padding:40px;
+               width:250px;
+               margin: auto;
+               margin-top: 80px;
+               height:200px;
+               margin-left: 180x}
+        
+        form{width:240px;
+        text-align: center;}
+     
+input[type=text]
+ {
+      width: 240px;
+      text-align: center;
+      background: transparent;
+      
+      border-bottom:1px solod #fff;
+      font-family: 'play',sans-serif;
+      font-size: 16px;
+      font-weight: 200px;
+      padding: 10px 0;
+      
+      cursor: pointer;
+      color:black;
+	
+}
+#pass{
+      width: 240px;
+      text-align: center;
+      background: transparent;
+      border-bottom:1px solod #fff;
+      font-family: 'play',sans-serif;
+      font-size: 16px;
+      font-weight: 200px;
+      padding: 10px 0;
+      cursor: pointer;
+      color:black;}
+input[type=submit]
+{     border:none;
+      width: 190px;
+      background: white;
+      color: #000;
+      font-size: 16px;
+      line-height: 25px;
+      padding: 10px 0;
+      border-radius: 15px;
+      cursor: pointer;}
+      
+input[type=submit]:hover {
+   color: #fff;
+   background-color: gray;
+	
+}
+  h2 {
+	color: white;
+}
+a:hover {
+	color:purple
+}
+.container
+    {display: flex;
+     flex-direction:row;
+     width:100%;
+     }
+  ::plaacehoder{
+    color:aliceblue;
+    opacity:0.8;}
+</style>
+<body>
+<div class="signin">
+<form action="log" method="post">
+<h1 style="color:white">SignIn here</h1>
+<input type="text" name="username" placeholder="Username"><br><br>
+<input type="password" name="password" id="pass" placeholder="Password"><br><br>
+<input type="submit" value="Sign in"><br><br>
+</form>
+<div id="container">
+<a href="ForgotPassword.html" style="margin-right: 0px;font-size:15px;text-align: center;text-decoration: none;">Forgot password?</a>
+</div><br><br>
+Dont't have account?<a href="Registration.html" style="text-decoration: none">&nbsp;Sign up</a>
+
+</div>
+</body>
+</html>

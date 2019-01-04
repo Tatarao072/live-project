@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Personal Loan</title>
+</head>
+<style type="text/css">
+body{font-family:sans-serif;
+background:url("personal-loan-1.jpg") no-repeat center fixed ;
+     background-size: cover;}
+.pl{  text-align:center;
+      font-size: 16px;
+      line-height: 25px; 
+      padding: 0px 60px;
+      border-radius: 5px;
+      cursor: pointer;
+      float: right}
+  #name{
+      width: 180px;
+      background:white;
+      color:blue;
+      font-size: 16px;
+      padding: 7px 2px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;
+      }
+    #drop{
+      width: 180px;
+      background:white;
+      color:blue;
+      font-size: 16px;
+      padding: 7px 2px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;}
+      
+     #sub1{
+      width: 180px;
+      background:white;
+      color:orange;
+      font-size: 16px;
+      padding: 7px 2px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;}
+      .eligible{
+      text-align:center;
+      font-size: 16px;
+      line-height: 25px; 
+      padding: 0px 60px;
+      border-radius: 5px;
+      cursor: pointer;
+      float: left}
+      h4{color:black;}
+      .main{background:blue;
+            color: white;
+            text-align: center;}
+</style>
+
+<body>
+<div class="main">
+<h2>Personal loan application form</h2>
+</div>
+<div class="eligible">
+<h3 style="color:white;">You can apply if</h3>
+<h4>1.your age is >25</h4>
+<h4>2.You are a salaried individual</h4>
+<h4>3.Your net monthly salary is more than Rs. 35,000</h4>
+</div>
+<div class="pl">
+<form action="personalLoan" method="post">
+<h3 ></h3>
+<input type="text" name="fname" id="name" placeholder="full name" required="required"><br><br>
+<input type="number" name="number" id="name" placeholder="mobile number" required="required"><br><br>
+<input type="number" name="pin" id="name" placeholder="residance pin code" required="required"><br><br>
+<input type="number" name="age" id="name" placeholder="Age" required="required"><br><br>
+ <select name="Marital status"  id="drop">
+    <option value="Marital status">Marital status</option>
+    <option value="married">Married</option>
+    <option value="Unmarried">Unmarried</option>
+    <option value="other">other</option>
+  </select>
+  <select name="Occupation Type" id="drop">
+    <option value="Occupation Type">Occupation Type</option>
+    <option value="salaried">salaried</option>
+    <option value="self employed">self employed</option>
+  </select>
+  <br><br>
+ <input type="text" name="cname" id="name" placeholder="Company name" required="required">
+ <input type="number" name="pan" id="name" placeholder="PAN id">
+ <input type="number" name="sal" id="name" placeholder="Monthly salary in-hand" required="required"><br><br>
+  
+  
+<button type="submit" id="sub1">Check eligibility</button>
+</form>
+</div>
+</body>
+</html>

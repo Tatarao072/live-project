@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/jspbank</property>
+		<property name="connection.user">root</property>
+		<property name="connection.password">hemanjali072</property>
+		<property name="show_sql">true</property>
+		<property name="hbm2ddl.auto">update</property>
+
+		<mapping class="org.jsp.app.Model.Registration"/>
+        <mapping class="org.jsp.app.Model.CardMemInformation"/>
+        <mapping class="org.jsp.app.Model.ContactPojo"/>
+        <mapping class="org.jsp.app.Model.AccountNumPojo"/>
+        <mapping class="org.jsp.app.Model.PersonalLoanPojo"/>
+        <mapping class="org.jsp.app.Model.CarLoanPojo"/>
+        <mapping class="org.jsp.app.Model.educationLoanPojo"/>
+        <mapping class="org.jsp.app.Model.MoneyTransferPojo"/>
+        <mapping class="org.jsp.app.Model.GeneratePinPojo"/>
+	</session-factory>
+
+</hibernate-configuration>
